@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="aitruong.com.hova.MainScreenActivity"
+    tools:showIn="@layout/activity_main_screen">
+<LinearLayout
+    android:id="@+id/line1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentTop="true"
+    android:layout_margin="16dp"
+    >
+  <ImageButton
+      android:id="@+id/profile_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/users"
+      android:layout_marginLeft="16dp"
+      />
+  <ImageButton
+      android:id="@+id/ride_schedule_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/calendar2"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"/>
+</LinearLayout>
+
+
+   <TextView
+       android:id="@+id/profile_text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/line1"
+       android:text="Profile"
+       android:textSize="25dp"
+       android:textColor="#005ce6"
+       android:layout_marginLeft="45dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/line1"
+        android:layout_toRightOf="@+id/profile_text"
+        android:text="Ride Schedule"
+        android:textSize="25dp"
+        android:textColor="#005ce6"
+        android:layout_marginLeft="45dp"
+        />
+
+</RelativeLayout>
